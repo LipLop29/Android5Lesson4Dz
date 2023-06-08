@@ -10,5 +10,5 @@ class MangaViewModel @Inject constructor(
     private val fetchMangaUseCase: FetchMangaUseCase
 ) : ViewModel() {
 
-    suspend fun fetchManga() = fetchMangaUseCase.invoke()
+    fun fetchManga() = fetchMangaUseCase.invoke()
 }

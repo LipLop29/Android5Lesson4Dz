@@ -10,5 +10,5 @@ class AnimeViewModel  @Inject constructor(
     private val fetchAnimeUseCase: FetchAnimeUseCase
 ) : ViewModel() {
 
-    suspend fun fetchAnime() = fetchAnimeUseCase.invoke()
+    fun fetchAnime() = fetchAnimeUseCase.invoke()
 }

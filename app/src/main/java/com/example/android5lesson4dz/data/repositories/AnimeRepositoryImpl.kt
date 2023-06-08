@@ -12,7 +12,7 @@ class AnimeRepositoryImpl @Inject constructor(
     private val animeApiService: AnimeApiService
 ) : BaseRepository(), AnimeRepository {
 
-    override suspend fun fetchAnime() = doRequest {
+    override fun fetchAnime() = doRequest {
         animeApiService.fetchAnime().data.map {
             it.toDomain()
         }

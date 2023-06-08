@@ -1,17 +1,14 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    // Parcelize
-    id("kotlin-parcelize")
-
     // Kapt
     kotlin("kapt")
-
     // Hilt
     id("com.google.dagger.hilt.android")
-
     // Save args
     id("androidx.navigation.safeargs.kotlin")
+    // Parcelize
+    id("kotlin-parcelize")
 }
 
 android {

@@ -12,7 +12,7 @@ class MangaRepositoryImpl @Inject constructor(
     private val mangaApiService: MangaApiService
 ) : BaseRepository(), MangaRepository {
 
-    override suspend fun fetchManga() = doRequest {
+    override fun fetchManga() = doRequest {
         mangaApiService.fetchManga().data.map {
             it.toDomain()
         }
